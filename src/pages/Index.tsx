@@ -2,13 +2,13 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { SocialCard } from "@/components/SocialCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ExperienceCard } from "@/components/ExperienceCard";
+import { Navigation } from "@/components/Navigation";
 import { useEffect, useState } from "react";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
@@ -25,9 +25,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-      <div className="container py-16 space-y-20">
+      <div className="container py-8 space-y-20">
+        <Navigation />
+        
         {/* Hero Section */}
-        <section className="space-y-8 animate-fade-in">
+        <section id="home" className="space-y-8 animate-fade-in">
           <h1 className="text-5xl font-bold">Hey, I'm [Your Name] 👋</h1>
           <p className="text-xl text-gray-300 max-w-2xl">
             A passionate developer focused on creating beautiful and functional web experiences.
@@ -57,7 +59,7 @@ const Index = () => {
         </section>
 
         {/* Projects Section */}
-        <section className="space-y-8">
+        <section id="projects" className="space-y-8">
           <h2 className="text-3xl font-bold">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
@@ -66,14 +68,16 @@ const Index = () => {
                 title={`Project ${i}`}
                 description="Description of the project goes here. You can add more details about what you built and the technologies used."
                 tags={["React", "TypeScript", "Tailwind"]}
-                link="#"
+                githubLink="#"
+                previewLink="#"
+                thumbnail={`https://images.unsplash.com/photo-148859052802${i}-c5249f4df085`}
               />
             ))}
           </div>
         </section>
 
         {/* Experience Section */}
-        <section className="space-y-8">
+        <section id="resume" className="space-y-8">
           <h2 className="text-3xl font-bold">Experience</h2>
           <div className="space-y-6">
             <ExperienceCard
