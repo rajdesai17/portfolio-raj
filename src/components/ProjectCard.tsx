@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
-
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -29,13 +28,13 @@ export const ProjectCard = ({
         className
       )}
     >
-      <div className="aspect-video overflow-hidden">
-        <img
-          src={thumbnail}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-        />
-      </div>
+      <div className="relative aspect-video overflow-hidden rounded-t-lg">
+  <img
+    src={thumbnail}
+    alt={title}
+    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+  />
+</div>
       <CardHeader>
         <CardTitle className="text-xl">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
