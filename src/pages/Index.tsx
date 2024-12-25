@@ -90,11 +90,11 @@ const Index = () => {
       },
       {
         id: 4,
-        title: "Wall of Advice",
-        description: "A digital community board where people can anonymously share and discover wisdom through colorful sticky notes on an infinite canvas.",
-        tags: ["React 18", "TypeScript", "NextJS", "Supabase", "Tailwind CSS"],
-        githubLink: "https://github.com/rajdesai17/wall-of-advice",
-        thumbnail: "/projects/wallofadvice.png"
+        title: "Portfolio Website",
+        description: "Developed a modern, responsive portfolio website to showcase projects and skills, leveraging Vite, TypeScript, React, shadcn-ui, and Tailwind CSS for a fast, type-safe, and aesthetically pleasing user experience.",
+        tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn-ui"],
+        githubLink: "https://github.com/rajdesai17/portfolio-raj",
+        thumbnail: "/projects/portfolio.png"
       }
     ].map((project) => (
       <ProjectCard
