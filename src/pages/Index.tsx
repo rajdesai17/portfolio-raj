@@ -83,6 +83,15 @@ const Index = () => {
               },
               {
                 id: 3,
+                title: "EcoPlace",
+                description: "EcoScore is a platform that provides real-time sustainability scores for e-commerce products, empowering consumers and businesses to make eco-friendly decisions.",
+                tags: ["ReactJS, NodeJS, ExpressJS, Firebase"],
+                githubLink: "https://github.com/rajdesai17/EcoPlace",
+                thumbnail: "/projects/ecoplace.jpg",
+                previewLink: "https://eco-place-cyan.vercel.app/", // No preview link
+              },
+              {
+                id: 4,
                 title: "ToDoMax",
                 description: "A minimalist daily task tracking app built with React Native and Expo. Track your daily tasks, visualize progress, and share your achievements on social media. Unlike traditional to-do apps, this application provides a unique day-centric approach to productivity tracking",
                 tags: ["React-native"],
@@ -91,7 +100,7 @@ const Index = () => {
                 previewLink: "", // No preview link
               },
               {
-                id: 4,
+                id: 5,
                 title: "Wall of Advice",
                 description: "A digital community board where people can anonymously share and discover wisdom through colorful sticky notes on an infinite canvas.",
                 tags: ["React 18", "TypeScript", "NextJS", "Supabase", "Tailwind CSS"],
@@ -100,7 +109,7 @@ const Index = () => {
                 previewLink: "", // No preview link
               },
               {
-                id: 5,
+                id: 6,
                 title: "Portfolio Website",
                 description: "Developed a modern, responsive portfolio website to showcase projects and skills, leveraging Vite, TypeScript, React, shadcn-ui, and Tailwind CSS for a fast, type-safe, and aesthetically pleasing user experience.",
                 tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn-ui"],
