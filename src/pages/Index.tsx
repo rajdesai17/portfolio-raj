@@ -51,7 +51,7 @@ const Index = () => {
                 </svg>
               }
               name="Medium"
-              link="https://medium.com/@itsrajdesai17"
+              link="https://medium.com/@rajoninternet"
             />
             <SocialCard
               icon={<Mail className="w-5 h-5" />}
@@ -61,10 +61,81 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Rest of the code remains the same */}
         {/* Projects Section */}
-        {/* ... */}
+        <section id="projects" className="space-y-8">
+          <h2 className="text-3xl font-bold">Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                id: 1,
+                title: "VConnect",
+                description: "VConnect is a gamified web platform that connects volunteers with organizers by offering event management tools, a points-based reward system (AURA), and social features to make volunteering engaging and rewarding.",
+                tags: ["ReactJS", "NodeJS", "ExpressJS", "TailwindCSS", "Firebase"],
+                githubLink: "https://github.com/rajdesai17/Vconnect",
+                thumbnail: "/projects/vconnect.png",
+                previewLink: "https://vconnect-ecru.vercel.app/",
+              },
+              {
+                id: 2,
+                title: "BLCassets",
+                description: "A decentralized platform for tokenizing and trading real estate assets on the Polygon Amoy testnet. This platform enables users to create, list, and trade real estate assets as digital tokens with blockchain-backed ownership verification.",
+                tags: ["NextJS", "Typescript", "EtherJS", "Solidity", "MongoDB", "IPFS"],
+                githubLink: "https://github.com/rajdesai17/Digital-Assets-Management",
+                thumbnail: "/projects/blcassets.png",
+                previewLink: "", // No preview link
+              },
+              {
+                id: 3,
+                title: "EcoPlace",
+                description: "EcoScore is a platform that provides real-time sustainability scores for e-commerce products, empowering consumers and businesses to make eco-friendly decisions.",
+                tags: ["ReactJS, NodeJS, ExpressJS, Firebase"],
+                githubLink: "https://github.com/rajdesai17/EcoPlace",
+                thumbnail: "/projects/ecoplace.png",
+                previewLink: "https://eco-place-cyan.vercel.app/", // No preview link
+              },
+              {
+                id: 4,
+                title: "ToDoMax",
+                description: "A minimalist daily task tracking app built with React Native and Expo. Track your daily tasks, visualize progress, and share your achievements on social media. Unlike traditional to-do apps, this application provides a unique day-centric approach to productivity tracking",
+                tags: ["React-native"],
+                githubLink: "https://github.com/rajdesai17/ToDoMAX",
+                thumbnail: "/projects/ToDoMax.jpg",
+                previewLink: "", // No preview link
+              },
+              {
+                id: 5,
+                title: "Wall of Advice",
+                description: "A digital community board where people can anonymously share and discover wisdom through colorful sticky notes on an infinite canvas.",
+                tags: ["React 18", "TypeScript", "NextJS", "Supabase", "Tailwind CSS"],
+                githubLink: "https://github.com/rajdesai17/wall-of-advice",
+                thumbnail: "/projects/wallofadvice.png",
+                previewLink: "", // No preview link
+              },
+              {
+                id: 6,
+                title: "Portfolio Website",
+                description: "Developed a modern, responsive portfolio website to showcase projects and skills, leveraging Vite, TypeScript, React, shadcn-ui, and Tailwind CSS for a fast, type-safe, and aesthetically pleasing user experience.",
+                tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn-ui"],
+                githubLink: "https://github.com/rajdesai17/portfolio-raj",
+                thumbnail: "/projects/portfolio.png",
+                previewLink: "https://www.rajoninternet.tech/", // Preview link for portfolio website
+              }
+            ].map((project) => (
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                tags={project.tags}
+                githubLink={project.githubLink}
+                previewLink={project.previewLink ? project.previewLink : null} // Conditionally render preview link
+                thumbnail={project.thumbnail || "/placeholder-image.jpg"}
+              />
+            ))}
+          </div>
+        </section>
         
+        {/* Other sections (Experience, Certificates, etc.) */}
+
       </div>
     </div>
   );
