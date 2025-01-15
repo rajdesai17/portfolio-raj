@@ -22,7 +22,7 @@ export const Navigation = () => {
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="https://drive.google.com/file/d/14xz_AF_ZUE_B7oZ81Qs72irWyjOZwXFM/view?usp=drive_link">
+            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="https://drive.google.com/file/d/1YnvfPrvjbM86sWVAKr2gsbTjTfSX9Vbh/view?usp=sharing">
               Resume
             </NavigationMenuLink>
           </NavigationMenuItem>
