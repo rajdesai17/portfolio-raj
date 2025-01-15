@@ -65,6 +65,15 @@ const Index = () => {
             {[
               {
                 id: 1,
+                title: "VConnect",
+                description: "VConnect is a gamified web platform that connects volunteers with organizers by offering event management tools, a points-based reward system (AURA), and social features to make volunteering engaging and rewarding.",
+                tags: ["ReactJS", "NodeJS", "ExpressJS", "TailwindCSS", "Firebase"],
+                githubLink: "https://github.com/rajdesai17/Vconnect",
+                thumbnail: "/projects/vconnect.png",
+                previewLink: "https://vconnect-ecru.vercel.app/",
+              },
+              {
+                id: 2,
                 title: "BLCassets",
                 description: "A decentralized platform for tokenizing and trading real estate assets on the Polygon Amoy testnet. This platform enables users to create, list, and trade real estate assets as digital tokens with blockchain-backed ownership verification.",
                 tags: ["NextJS", "Typescript", "EtherJS", "Solidity", "MongoDB", "IPFS"],
@@ -73,7 +82,7 @@ const Index = () => {
                 previewLink: "", // No preview link
               },
               {
-                id: 2,
+                id: 3,
                 title: "ToDoMax",
                 description: "A minimalist daily task tracking app built with React Native and Expo. Track your daily tasks, visualize progress, and share your achievements on social media. Unlike traditional to-do apps, this application provides a unique day-centric approach to productivity tracking",
                 tags: ["React-native"],
@@ -82,7 +91,7 @@ const Index = () => {
                 previewLink: "", // No preview link
               },
               {
-                id: 3,
+                id: 4,
                 title: "Wall of Advice",
                 description: "A digital community board where people can anonymously share and discover wisdom through colorful sticky notes on an infinite canvas.",
                 tags: ["React 18", "TypeScript", "NextJS", "Supabase", "Tailwind CSS"],
@@ -91,7 +100,7 @@ const Index = () => {
                 previewLink: "", // No preview link
               },
               {
-                id: 4,
+                id: 5,
                 title: "Portfolio Website",
                 description: "Developed a modern, responsive portfolio website to showcase projects and skills, leveraging Vite, TypeScript, React, shadcn-ui, and Tailwind CSS for a fast, type-safe, and aesthetically pleasing user experience.",
                 tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn-ui"],
